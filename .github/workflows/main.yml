@@ -37,9 +37,7 @@ jobs:
       - name: Build app bundle
         run: npm run build:prod
 
-      # Route file renaming
-      - name: Rename index for routing
-        run: mv dist/nuevo-bienestar/index.html dist/nuevo-bienestar/404.html
+      
 
       # Deploy to GitHub Pages
       - name: Deploy to Pages
